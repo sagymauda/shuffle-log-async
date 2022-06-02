@@ -13,4 +13,4 @@ services:
     context: MsLog
     dockerfile: Dockerfile
    ports:
-    - "8081:8081"
+     - "8081:8081"
