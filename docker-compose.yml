@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+ ms-shuffle-number:
+  build:
+    context: MsShuffle
+    dockerfile: Dockerfile
+  ports:
+    - "8080:8080"
+  depends_on:
+    - ms-log-number
+ ms-log-number:
+   build:
+    context: MsLog
+    dockerfile: Dockerfile
+   ports:
+    - "8081:8081"
