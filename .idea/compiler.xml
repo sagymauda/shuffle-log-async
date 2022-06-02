@@ -12,8 +12,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MsLog" target="1.8" />
-      <module name="MsShuffle" target="1.8" />
+      <module name="MsLog" target="11" />
+      <module name="MsShuffle" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
