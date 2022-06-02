@@ -9,23 +9,19 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class MsShuffleApplication implements CommandLineRunner {
-
-	@Autowired
-	ConfigureUrl configureUrl;
-
-	public static void main(String[] args) {
-		SpringApplication.run(MsShuffleApplication.class, args);
-	}
+public class MsShuffleApplication{
 
 
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();
-	}
-	@Override
-	public void run(String... args) throws Exception {
-		System.out.println(configureUrl.getUrl());
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MsShuffleApplication.class, args);
+    }
+
+
+    @Bean
+    public RestTemplate getRestTemplate() {
+        return new RestTemplate();
+    }
+
 
 }
+
