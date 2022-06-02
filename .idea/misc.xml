@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/MsLog/MsLog/pom.xml" />
         <option value="$PROJECT_DIR$/MsShuffle/MsShuffle/pom.xml" />
+        <option value="$PROJECT_DIR$/MsShuffle/pom.xml" />
+        <option value="$PROJECT_DIR$/MsLog/pom.xml" />
       </list>
     </option>
   </component>
