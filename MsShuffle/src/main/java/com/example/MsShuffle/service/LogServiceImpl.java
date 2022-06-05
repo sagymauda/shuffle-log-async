@@ -1,23 +1,25 @@
 package com.example.MsShuffle.service;
 
-import com.example.MsShuffle.configuration.ConfigureUrl;
+
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
 @RequiredArgsConstructor
-public class LogServiceImpl implements  LogService {
+public class LogServiceImpl implements LogService {
 
     private final RestTemplate restTemplate;
 
-    private final ConfigureUrl configureUrl;
+    @Value("${log.url}")
+    private String url;
 
     @Override
-    public void sendToLogService(int number) {
+    public void logService(int number) {
 
         HttpEntity<Integer> request = new HttpEntity<>(number);
-        restTemplate.postForEntity(configureUrl.getUrl(),request,Integer.class);
+        restTemplate.postForEntity(url, request, Integer.class);
     }
 }

@@ -6,9 +6,6 @@ import java.util.List;
 
 public interface ShuffleService {
 
-
-     List<Integer> shuffle(int number);
-
-     void isNumberInRange(int number) throws InvalidNumberException;
+    List<Integer> shuffle(int number);
 
 }
